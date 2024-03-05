@@ -16,7 +16,7 @@ export const Navbar = () => {
           <img src={Logo} alt="Logo Tu medio" className='h-full' />
         </Link>
         <div className={`absolute border-b border-grey p-4 px-[5vw] w-full mt-0.5 left-0 top-full md:border-0 md:block md:relative md:inset-0 md:p-0 md:show ${inputSearchVisible ? 'show' : 'hide'}`}>
-          <input className='bg-gray-200 p-3 rounded-full font-Lato w-full text-sm px-6 md:w-auto md:pl-10 focus-visible:outline-slate-300 focus-visible:outline-1 placeholder:font-Lato' type="text" placeholder='Buscar' />
+          <input className='bg-gray-200 p-3 rounded-full font-Lato w-full text-sm px-6 md:w-auto md:pl-10 focus-visible:outline-slate-300 focus-visible:outline-1 placeholder:font-Lato placeholder:text-gray-500 text-gray-950' type="text" placeholder='Buscar' />
           <IconSearch cssInfo='absolute right-[10%] top-[26px] p-1 pointer-events-none md:left-3 md:top-[10px]' />
         </div>
         <div className='ml-auto flex justify-center items-center gap-4 h-full'>
@@ -26,7 +26,7 @@ export const Navbar = () => {
             <p className='font-Lato'>Escribe</p>
           </Link>
           <Link to={'signin'} className='bg-gray-800 text-gray-200 rounded-full w-24 flex items-center justify-center font-Lato h-full'>Sign In</Link>
-          <Link to={'signup'} className='bg-gray-200 text-gray-800 rounded-full w-24 flex items-center justify-center font-Lato h-full'>Sign Up</Link>
+          <Link to={'signup'} className='hidden bg-gray-200 text-gray-800 rounded-full w-24 md:flex items-center justify-center font-Lato h-full'>Sign Up</Link>
         </div>
       </nav>
       <Outlet />
