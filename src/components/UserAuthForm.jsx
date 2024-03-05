@@ -5,7 +5,7 @@ import { AnimationWrapper } from '../common/AnimationWrapper'
 
 export const UserAuthForm = ({ type }) => {
   return (
-    <AnimationWrapper>
+    <AnimationWrapper keyValue={type}>
       <section className="min-h-[calc(100vh-80px)] flex justify-center items-center">
         <form className="w-[80%] max-w-[400px]">
           <h1 className="font-Arvo text-4xl capitalize text-center mb-24">{type === 'sign-in' ? 'Bienvenido' : 'Registrate'}</h1>
